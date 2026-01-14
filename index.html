@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voidbreak SMP - Minecraft Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Voidbreak SMP</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Voidbreak SMP</h1>
+            <p class="hero-subtitle">Experience Minecraft Like Never Before</p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="copyIP()">Copy Server IP</button>
+                <button class="btn-secondary" onclick="scrollToSection('join')">How to Join</button>
+            </div>
+            <div class="server-ip">
+                <span id="ip-text">play.voidbreaksmp.com</span>
+                <span id="copy-feedback">Copied!</span>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Voidbreak SMP</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Community Driven</h3>
+                    <p>Join a thriving community of Minecraft enthusiasts who share your passion for building, exploring, and creating together.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚔️</div>
+                    <h3>Epic Adventures</h3>
+                    <p>Experience custom-generated worlds, unique biomes, and challenging dungeons that will test your skills and creativity.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🏰</div>
+                    <h3>Build & Create</h3>
+                    <p>Unleash your creativity with our enhanced building tools and protection systems that keep your creations safe.</p>
+                </div>
+            </div>
+            <div class="p2w-notice">
+                <div class="notice-icon">⚠️</div>
+                <div class="notice-content">
+                    <h3>100% NOT P2W</h3>
+                    <p>Voidbreak SMP is completely free-to-play. There are no pay-to-win mechanics, no unfair advantages for donors, and no hidden fees. Everyone plays on equal footing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Server Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>🌍 Custom World Generation</h4>
+                    <p>Explore unique terrain with our custom world generation settings</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🛡️ Land Protection</h4>
+                    <p>Claim your land and protect your builds with our easy-to-use protection system</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🏪 Player Economy</h4>
+                    <p>Trade with other players using our server-based economy system</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🎯 Custom Events</h4>
+                    <p>Participate in regular server events and competitions with unique rewards</p>
+                </div>
+                <div class="feature-item">
+                    <h4>💬 Discord Integration</h4>
+                    <p>Stay connected with our community through Discord chat integration</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🔄 Regular Backups</h4>
+                    <p>Your progress is safe with our automated backup system</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="section">
+        <div class="container">
+            <h2 class="section-title">Server Rules</h2>
+            <div class="rules-container">
+                <div class="rule-category">
+                    <h3>General Rules</h3>
+                    <ul>
+                        <li>No cheating or using hacked clients</li>
+                        <li>Respect all players and staff members</li>
+                        <li>No spamming or excessive caps in chat</li>
+                        <li>No inappropriate language or content</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Building Rules</h3>
+                    <ul>
+                        <li>Do not build within 100 blocks of other players without permission</li>
+                        <li>No inappropriate or offensive builds</li>
+                        <li>Respect the environment - no excessive griefing</li>
+                        <li>Follow building guidelines in spawn areas</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>PvP Rules</h3>
+                    <ul>
+                        <li>No PvP in spawn areas</li>
+                        <li>No camping or trapping players unfairly</li>
+                        <li>Respect players who don't want to PvP</li>
+                        <li>No toxic behavior during PvP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="staff" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Meet Our Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <div class="staff-avatar">👑</div>
+                    <h3>Server Owner</h3>
+                    <p class="staff-role">Lead Administrator</p>
+                    <p class="staff-desc">Manages the server and ensures smooth gameplay for everyone</p>
+                </div>
+                <div class="staff-member">
+                    <div class="staff-avatar">🛡️</div>
+                    <h3>Admin Team</h3>
+                    <p class="staff-role">Server Moderators</p>
+                    <p class="staff-desc">Keeps the server safe and enforces rules fairly</p>
+                </div>
+                <div class="staff-member">
+                    <div class="staff-avatar">🎨</div>
+                    <h3>Build Team</h3>
+                    <p class="staff-role">World Designers</p>
+                    <p class="staff-desc">Creates amazing spawns and event areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="section">
+        <div class="container">
+            <h2 class="section-title">How to Join</h2>
+            <div class="join-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Launch Minecraft</h3>
+                        <p>Open your Minecraft Java Edition client (version 1.20+ recommended)</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Add Server</h3>
+                        <p>Click "Multiplayer" then "Add Server"</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Enter Server Info</h3>
+                        <p>Server Address: <strong>play.voidbreaksmp.com</strong></p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Join & Play</h3>
+                        <p>Click "Done" and join the server to start your adventure!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="join-cta">
+                <button class="btn-primary" onclick="copyIP()">Copy Server IP</button>
+                <div class="server-ip-display">
+                    <span>play.voidbreaksmp.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Voidbreak SMP</h3>
+                    <p>A community-driven Minecraft server focused on fair gameplay and creative building.</p>
+                    <div class="footer-notice">
+                        <p>🚫 100% NOT P2W - Equal gameplay for everyone!</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rules">Rules</a></li>
+                        <li><a href="#staff">Staff</a></li>
+                        <li><a href="#join">Join</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Server Info</h4>
+                    <p><strong>IP:</strong> play.voidbreaksmp.com</p>
+                    <p><strong>Version:</strong> 1.20+</p>
+                    <p><strong>Type:</strong> Survival Multiplayer</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Voidbreak SMP. All rights reserved. Not affiliated with Mojang Studios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
